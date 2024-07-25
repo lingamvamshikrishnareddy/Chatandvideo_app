@@ -1,0 +1,16 @@
+{
+    "name": "chat-application",
+    "version": "1.0.0",
+    "description": "A simple chat application with video call feature",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "http": "^0.0.1-security",
+      "mongoose": "^6.0.13",
+      "socket.io": "^4.5.1"
+    }
+  }
+  
