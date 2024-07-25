@@ -1,1 +1,32 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Application with Video Call</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Chat Application with Video Call</h1>
+    <div class="main-content">
+      <div class="chat-container">
+        <div class="chat-box" id="chat-box"></div>
+        <input type="text" id="username" placeholder="Enter your username" />
+        <input type="text" id="message" placeholder="Enter your message" />
+        <button id="send-button">Send</button>
+      </div>
+      <div class="video-container">
+        <video id="local-video" autoplay muted></video>
+        <video id="remote-video" autoplay></video>
+        <div class="call-controls">
+          <button id="call-button">Start Video Call</button>
+          <button id="hangup-button" style="display: none;">End Call</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.socket.io/4.5.1/socket.io.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
